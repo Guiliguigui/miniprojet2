@@ -6,43 +6,63 @@ from  CSVTRAD import reorganisation_valeurs
 class TestCSVTRADFunctions(unittest.TestCase):
 
     def setUp(self):
-        format_actuel = ["address",
-                         "carrosserie",
-                         "categorie",
-                         "couleur",
-                         "cylindree",
-                         "date_immat",
-                         "denomination",
-                         "energy",
-                         "firstname",
-                         "immat",
-                         "marque",
-                         "name",
-                         "places",
-                         "poids",
-                         "puissance",
-                         "type_variante_version",
-                         "vin"]
+
+        format_trad={'address' :
+                     'carrosserie' :
+                     'categorie' :
+                     'couleur' :
+                     'cylindree' :
+                     'date_immat' :
+                     'denomination' :
+                     'energy' :
+                     'firstname',
+                     'immat',
+                     'marque',
+                     'name',
+                     'places',
+                     'poids',
+                     'puissance',
+                     'type_variante_version',
+                     'vin'
+                     }
+
+        format_actuel = ['address',
+                         'carrosserie',
+                         'categorie',
+                         'couleur',
+                         'cylindree',
+                         'date_immat',
+                         'denomination',
+                         'energy',
+                         'firstname',
+                         'immat',
+                         'marque',
+                         'name',
+                         'places',
+                         'poids',
+                         'puissance',
+                         'type_variante_version',
+                         'vin']
         
-        format_souhaite = ["adresse_titulaire",
-                           "nom",
-                           "prenom",
-                           "immatriculation",
-                           "date_immatriculation",
-                           "vin",
-                           "marque",
-                           "denomination commerciale",
-                           "couleur",
-                           "carrosserie",
-                           "categorie",
-                           "cylindree",
-                           "energie",
-                           "places",
-                           "poids",
-                           "puissance",
-                           "type",
-                           "variante",
-                           "version"]
+        format_souhaite = ['adresse_titulaire',
+                           'nom',
+                           'prenom',
+                           'immatriculation',
+                           'date_immatriculation',
+                           'vin',
+                           'marque',
+                           'denomination commerciale',
+                           'couleur',
+                           'carrosserie',
+                           'categorie',
+                           'cylindree',
+                           'energie',
+                           'places',
+                           'poids',
+                           'puissance',
+                           'type',
+                           'variante',
+                           'version']
 
 
     def test_lecture(self):
